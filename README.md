@@ -1,3 +1,11 @@
+
+## запуск через консоль: 
+cd "C:\Users\username\OneDrive\Рабочий стол\fastapi"
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+
 ## registration
 POST /auth/register
 
@@ -55,4 +63,3 @@ DELETE /tasks/{task_id}
 
 ## Топ-N приоритетных задач
 GET /tasks/top?limit=3
-
